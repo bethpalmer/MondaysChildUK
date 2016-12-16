@@ -1,0 +1,35 @@
+/*
+css
+*/
+#gallery {
+	text-align: center;
+}
+
+#gallery .img{
+  max-width: 100%;
+  max-height: 100%;
+}
+#gallery .img:hover {
+  cursor: pointer;
+  cursor: hand;
+  opacity: 0.6;
+}
+
+/*#gallery2 {
+  text-align: center;
+}
+#gallery2 .img1{
+  max-width: 100%;
+  max-height: 100%;
+}
+#gallery2 .img1:hover {
+  cursor: pointer;
+  cursor: hand;
+  opacity: 0.6;
+}*/
+.modal-dialog {
+	width: 30%;
+}
+/*.modal-body {
+	width: auto;
+}*/
