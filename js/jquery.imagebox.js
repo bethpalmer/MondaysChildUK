@@ -22,35 +22,47 @@
     initCss(obj);
 
     $(objClicked).on('click', function(){
+      // _url is a variable which stores class .img url value when obj is clicked
+      // current is a variable which is set to 0
       var _url = $(this).data("url"), current = 0;
-      // 清空数组 list_images
+      // Clear the array list_images
       if(list_images.length > 0){
         list_images.length = 0;
       }
 
       $(objClicked).each(function(index, element) {
+        // declared $img is a variable.
+        // QUESTION: what does $(element) refer to? is it like $this? Oh, it is the parameter fo this anonymous function?
+        // declared _src as a variable and assigned the src value of $img to it (so it knows $img is the img with the class .img)
         var $img = $(element), _src = $img.attr("src");
+
         if(_url == _src){
           current = index + 1;
         }
+        // Builds a list of source images and returns current as the number of the clicked image
         list_images.push(_src);
       });
-      // if(typeof(fileName) == 'undefined'){
-      //   $('.modal-title').text('Image Preview');
-      // }else{
-      //   $('.modal-title').text($(fileName).text());
-      // }
+      // Hmm.. might have to get back to this bit as nit currently working at all, and would rather use alt.
+      if(typeof(fileName) == 'undefined'){
+        $('.modal-title').text('Image Preview');
+      }else{
+        $('.modal-title').text($(fileName).text());
+      }
       // SOMETHING TO DO WITH THIS... I JUST DON'T KNOW HOW TO UPDATE WITH CLICK TO NEXT...
       // $(".modal-title").text(this.alt);
-      $('#img-preview').html('<img src="'+ _url +'" width="100%" height="100%" class="image-box" style="cursor: pointer ;"></img>')
+      $('#img-preview').html('<img src="'+ _url +'" width="100%" height="100%" style="cursor: pointer ;"></img>')
+      // NOTE: took out  class="image-box" from the line above - doesn't relate to anything... still works.
+      // Add the content of variable current as an attribute of the img-preview
       $('#img-preview').attr({'current': current});
+      // #img-preview is the idf if the image body of the modal popup
+      // #unbind-pos is the id of the HTML div that is the modal... which is hidden by default
       $(obj).find('#unbind-pos').modal('show');
     });
 
     btnCtrlImgEvent(options, list_images);
   };
 
-  var rotateDeg = 0;
+  // var rotateDeg = 0;
   /**
   *初始化html
   */
@@ -82,7 +94,7 @@
   };
 
   /**
-  * 初始化样式
+  * Initialize the style
   */
   function initCss(obj){
     $(obj).find('#img-preview').css({
@@ -94,6 +106,7 @@
     $(obj).find('.img-op').css({
       'margin-top': '5px',
       'text-align': 'center'
+      // 'background-color': '#24435F'
     });
     $(obj).find('.modal .modal-content .btn').css('border-radius', '0');
     $(obj).find('.img-op .btn').css({
@@ -112,86 +125,9 @@
   */
   function btnCtrlImgEvent(options, list_images){
 
-    // zoomIn();
-    // zoomOut();
-    // dragImage();
-    // rotateImage(options);
     switchImage(list_images);
 
   };
-
-  //图片放大
-  // function zoomIn(){
-  //   $('.zoom-in').click(function(){
-  //     var imageHeight = $('#img-preview img').height();
-  //     var imageWidth = $('#img-preview img').width();
-  //     $('#img-preview img').css({
-  //       height: '+=' + imageHeight * 0.1,
-  //       width: '+=' + imageWidth * 0.1
-  //     });
-  //   });
-  // };
-
-  //图片缩小
-  // function zoomOut(){
-  //   $('.zoom-out').click(function(){
-  //     var imageHeight = $('#img-preview img').height();
-  //     var imageWidth = $('#img-preview img').width();
-  //     $('#img-preview img').css({
-  //       height: '-=' + imageHeight * 0.1,
-  //       width: '-=' + imageWidth * 0.1
-  //     });
-  //   });
-  // };
-
-  // 图片预览框中拖拽
-  // function dragImage(){
-  //   $('#img-preview').on('mousedown', 'img', function(event) {
-  //     var mousePos = { x: event.clientX, y: event.clientY };
-  //     var _this = this;
-
-  //     var scrollLeft = $(_this).parent().scrollLeft();
-  //     var scrollTop = $(_this).parent().scrollTop();
-
-  //     $(document).on('mousemove', function(event){
-  //       var offsetX = event.clientX - mousePos.x;
-  //       var offsetY = event.clientY - mousePos.y;
-
-  //       $(_this).parent().scrollLeft(scrollLeft - offsetX);
-  //       $(_this).parent().scrollTop(scrollTop - offsetY);
-  //     });
-
-  //     $(document).on('mouseup', function(){
-  //       $(document).off("mousemove");     
-  //     });
-  //     return false;
-  //   });
-  // };
-
-  //图片旋转，默认方向是右旋转
-  // function rotateImage(options){
-  //   $('.rotate').click(function() {
-  //     if(options.rotateDirection == 'right'){
-  //       rotateDeg += 90;
-  //       if(rotateDeg == 360){
-  //         rotateDeg = 0;
-  //       }
-  //     }
-  //     if(options.rotateDirection == 'left'){
-  //       rotateDeg -= 90;
-  //       if(rotateDeg == -360){
-  //         rotateDeg = 0;
-  //       }
-  //     }
-  //     $('#img-preview img').css({
-  //       'transform': 'rotate('+ rotateDeg +'deg)',
-  //       '-webkit-transform': 'rotate('+ rotateDeg +'deg)',
-  //       '-moz-transform':'rotate('+ rotateDeg +'deg)',
-  //       '-o-transform': 'rotate('+ rotateDeg +'deg)',
-  //       '-ms-transform': 'rotate('+ rotateDeg +'deg)'
-  //     });
-  //   });
-  // };
 
   //图片切换
   function switchImage(list_images){

@@ -1,15 +1,18 @@
 /*
 css
 */
-#gallery {
+#gallery,
+#galleryFr {
 	text-align: center;
 }
 
-#gallery .img{
+#gallery,
+#galleryFr .img{
   max-width: 100%;
   max-height: 100%;
 }
-#gallery .img:hover {
+#gallery
+#galleryFr .img:hover {
   cursor: pointer;
   cursor: hand;
   opacity: 0.6;
@@ -33,3 +36,14 @@ css
 /*.modal-body {
 	width: auto;
 }*/
+
+#bootstrap-overrides .btn {
+  background-color: #3f3f3f;
+  box-shadow: 2px 2px 5px #789EAB;
+  border: none;
+}
+
+
+#bootstrap-overrides .btn:hover {
+  background-color: #24435F;
+}
