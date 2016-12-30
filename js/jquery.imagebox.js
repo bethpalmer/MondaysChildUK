@@ -11,17 +11,19 @@
 * options: {objClicked: 点击objClicked浏览图片 required, fileName: 图片标题元素 options, rotateDirection: 图片旋转方向, options}
 */
 (function($){
+
+  var list_images = [];
+  var loaded = false;
+
   $.fn.imageBox = function(options){
     var options = $.extend({
       objClicked: '.img',      // 点击的元素
-      rotateDirection: 'right' // 图片旋转方向， 默认是right => 顺时针
     }, options);   
-    var obj = this, objClicked = options.objClicked, fileName = options.fileName, list_images = [];
 
-    initHtml(obj);
-    initCss(obj);
+    var obj = this, objClicked = options.objClicked, fileName = options.fileName;
 
     $(objClicked).on('click', function(){
+
       // _url is a variable which stores class .img url value when obj is clicked
       // current is a variable which is set to 0
       var _url = $(this).data("url"), current = 0;
@@ -42,6 +44,7 @@
         // Builds a list of source images and returns current as the number of the clicked image
         list_images.push(_src);
       });
+
       // Hmm.. might have to get back to this bit as nit currently working at all, and would rather use alt.
       if(typeof(fileName) == 'undefined'){
         $('.modal-title').text('Image Preview');
@@ -59,7 +62,13 @@
       $(obj).find('#unbind-pos').modal('show');
     });
 
-    btnCtrlImgEvent(options, list_images);
+    if (!loaded) {
+      initHtml(obj);
+      initCss(obj);
+      btnCtrlImgEvent(options, list_images);
+      loaded = true;
+    }
+
   };
 
   // var rotateDeg = 0;

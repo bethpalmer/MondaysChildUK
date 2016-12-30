@@ -3,6 +3,12 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+/* TODO - Media Queries
+Testimonials: < 966px make background just 100% wall rather than reflection image;
+Fundraising: < 1027px make background just black wall OR
+change text to say just - support our current fundraisers, either by texting: (cut out rest); */
+
 body {
 /*  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-family: 'Anton', sans-serif;
@@ -202,20 +208,40 @@ img.transparent {
   background-color: white;
 }
 
+/*.background {
+
+}*/
+
 #about {
   background: url(../img/NoHopeReflect.jpg);
-  background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-width: 100%;
+   background-height: auto;
 }
 
 #testimonials {
-  background: url(../img/wallReflect.jpg);
-  background-size: cover;
+   background: url(../img/wallReflect.jpg);
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-width: 100%;
+   background-height: auto;
 }
 
 #fundraising {
-  background: url(../img//wallReflectOnLeft.jpg);
-  background-size: cover;
+   background: url(../img//wallReflectOnLeft.jpg);
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-width: 100%;
+   background-height: auto;
 }
+
 /*#sponsors img {
   background-color: white;
   margin: 10px 10px;
@@ -377,9 +403,9 @@ td.source {
   background: url(../img/wall-30opacity.jpg);
 }*/
 
-.split-screen img {
+/*.split-screen img {
   width: 100%;
-}
+}*/
 
 section.tri-column {
   background: url(../img/wall.jpg);
