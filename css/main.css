@@ -526,6 +526,18 @@ fieldset[disabled] .btn-success.active {
   height: auto;  
 }
 
+#matt img {
+  max-width: 300px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  #sponsors img {
+  width: 80%;
+  margin: 2em 2em;
+  }
+}
+
 @media (max-width: 991px) {
   #about {
     background: url(../img/wall.jpg);
@@ -590,11 +602,11 @@ fieldset[disabled] .btn-success.active {
   }*/
 }
 
-@media (max-width: 500px) {
-/*  #matt-small img {
+@media (max-width: 480px) {
+  #matt {
     display: block;
   }
-  #matt-small aside {
+  #matt-text {
     display: block;
-  }*/
+  }
 }
