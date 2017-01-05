@@ -23,10 +23,6 @@ p {
 p.dark {
   color: #3f3f3f;
 }
-/*p.different {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px;
-}*/
 
 p.small {
   font-size: 14px;
@@ -62,7 +58,6 @@ h1 {
 
 h2 {
   font-size: 3em;
- /* padding-bottom: 1em;*/
 }
 
 h3 {
@@ -72,7 +67,6 @@ h3 {
 }
 
 h4 {
- /* font-size: 1.5em;*/
   text-transform: none;
 }
 
@@ -98,55 +92,11 @@ h6 {
 h6.grey {
   color: #3f3f3f;
 }
-/*#bootstrap-overrides h4 {
 
-}*/
-
-/*hr.star-light,
-hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 30px;
-}
-hr.star-light:after,
-hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
-}
-hr.star-light {
-  border-color: white;
-}
-hr.star-light:after {
-  background-color: #18BC9C;
-  color: white;
-}
-hr.star-primary {
-  border-color: #2C3E50;
-}
-hr.star-primary:after {
-  background-color: white;
-  color: #2C3E50;
-}*/
-.img-centered {
-  margin: 0 auto;
-}
-
-/*#nohope img {
-    -webkit-box-reflect: left 0px
-}*/
 
 header {
   text-align: center;
   background: url(../img/Wall1Crop.jpg);
-/*  background-color: black;*/
   color: white;
 }
 header .container {
@@ -157,28 +107,12 @@ header img {
   display: block;
   margin: 0 auto 20px;
 }
-/*header .intro-text .name {
-  display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
-}
-header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300;
-}*/
+
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-/*  header .intro-text .name {
-    font-size: 4.75em;
-  }
-  header .intro-text .skills {
-    font-size: 1.75em;
-  }*/
 }
 
 .team img {
@@ -186,31 +120,9 @@ header .intro-text .skills {
   padding-right: 15px;
 }
 
-/*img.no-hope-r {
-  border-left: medium solid white;
-}*/
-
-/*img.no-hope-l {
-  border-right: medium solid white;
-}*/
-
-/*figure {
-  display: table;
-  width: 300px;
-}
-img, figcaption {
-  display: table-row;
-  background-color: white;
-  color: #4a4a4a;
-}*/
-
 img.transparent {
   background-color: white;
 }
-
-/*.background {
-
-}*/
 
 #about {
   background: url(../img/NoHopeReflect.jpg);
@@ -241,15 +153,6 @@ img.transparent {
    background-width: 100%;
    background-height: auto;
 }
-
-/*#sponsors img {
-  background-color: white;
-  margin: 10px 10px;
-}*/
-/*#AboutUs {
-  padding: 0 0;
-  margin: 0 0;
-}*/
 
 .navbar-custom {
   background: #3f3f3f;
@@ -329,33 +232,31 @@ img.transparent {
   }
 }
 
+/*@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse .navbar-toggle {
+    display: block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+}*/
+
 section {
   border-top: medium solid white;
 }
-/*section h2 {
-  margin: 0;
-}*/
-
-/*#about {
-  background: url(../img/NoHopeRIght.jpg);
-}*/
-/*
-.title h1 {
-  
-}*/
 
 .body-text {
-/*  padding-top: 50px;*/
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 50px;
 }
 
-/*.body-text a {
-  font-size: 1.25em;
-  font-weight: 100;
-}
-*/
 .no-gutter > [class*='col-'] {
   padding-right:0;
   padding-left:0;
@@ -375,9 +276,6 @@ td.source {
   color: #789EAB;
   font-style: italic;
 }
-/*.btn-primary {
-  background-color: white;
-}*/
 
 #bootstrap-overrides .btn-style {
   background-color: #3f3f3f;
@@ -390,28 +288,12 @@ td.source {
   background-color: #24435F;
 }
 
-/*
-.split-screen.container {
-  padding-right: 0;
-  padding-left: 0;
-}*/
-/*div.no-hope {
-  background: url(../img/NoHopeSmaller.jpg);
-}*/
-
-/*.split-screen {
-  background: url(../img/wall-30opacity.jpg);
-}*/
-
-/*.split-screen img {
-  width: 100%;
-}*/
-
 section.tri-column {
   background: url(../img/wall.jpg);
   color: white;
   padding: 50px 0;
 }
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0;
@@ -425,59 +307,7 @@ section.tri-column {
   margin-top: 2em;
   margin-bottom: 1em;
 }
-/*
-#bootstrap-overrides.tri-column .container{
-  margin-top: -20px;
-}*/
 
-/*#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
-}
-#portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-  margin: 0;
-}
-#portfolio * {
-  z-index: 2;
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}*/
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
@@ -680,62 +510,49 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
-/*.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
+
+.img {
+  width: 100%;
+  height: auto;
 }
-.portfolio-modal .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
+
+.imgFr {
+  width: 100%;
+  height: auto;
 }
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
+
+@media (max-width: 991px) {
+  #about {
+    background: url(../img/wall.jpg);
+  }
+  #fundraising {
+     background: url(../img/wall.jpg);
+  }
+  h1 {
+    color: white;
+  }
 }
-.portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
+
+@media (min-width: 992px) {
+  #no-hope {
+    display: none;
+  }
 }
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
+
+@media (max-width: 767px) {
+  #team1, #team2, #team3 {
+    text-align: center;
+  }
 }
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #2C3E50;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #2C3E50;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
+
+@media (min-width: 768px) {
+  #team1 {
+    text-align: right;
+  }
+  #team2 {
+    text-align: center;
+    }
+  #team3 {
+    text-align: left;
+  } 
 }

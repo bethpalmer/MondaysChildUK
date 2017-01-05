@@ -46,11 +46,11 @@
       });
 
       // Hmm.. might have to get back to this bit as nit currently working at all, and would rather use alt.
-      if(typeof(fileName) == 'undefined'){
-        $('.modal-title').text('Image Preview');
-      }else{
-        $('.modal-title').text($(fileName).text());
-      }
+      // if(typeof(fileName) == 'undefined'){
+      //   $('.modal-title').text('Image Preview');
+      // }else{
+      //   $('.modal-title').text($(fileName).text());
+      // }
       // SOMETHING TO DO WITH THIS... I JUST DON'T KNOW HOW TO UPDATE WITH CLICK TO NEXT...
       // $(".modal-title").text(this.alt);
       $('#img-preview').html('<img src="'+ _url +'" width="100%" height="100%" style="cursor: pointer ;"></img>')
@@ -86,10 +86,6 @@
                         '<div style="min-height: 350px;max-height: 500px;" class="modal-body">'+
                             '<div id="img-preview"></div>'+
                             '<div class="img-op">'+
-                                // '<span class="btn btn-primary zoom-in">Zoom In</span>'+
-                                // '<span class="btn btn-primary zoom-out">Zoom Out</span>'+
-                                // '<span class="btn btn-primary rotate">Rotate</span>'+
-                                // '<br>'+
                                 '<span role="prev" class="btn btn-primary switch">Prev</span>'+
                                 '<span role="next" class="btn btn-primary switch">Next</span>'+
                             '</div>'+
