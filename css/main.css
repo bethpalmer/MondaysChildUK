@@ -28,6 +28,11 @@ p.small {
   font-size: 14px;
 }
 
+p.super-small {
+  font-size: 12px;
+  color: #18BC9C;
+}
+
 a,
 a:hover,
 a:focus,
