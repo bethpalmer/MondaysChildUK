@@ -37,6 +37,12 @@ css
 	width: auto;
 }*/
 
+@media (max-width: 991px) {
+  .modal-dialog {
+  width: 60%;
+  }
+}
+
 #bootstrap-overrides .btn {
   background-color: #3f3f3f;
   box-shadow: 2px 2px 5px #789EAB;
