@@ -4,13 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-/* TODO - Media Queries
-Testimonials: < 966px make background just 100% wall rather than reflection image;
-Fundraising: < 1027px make background just black wall OR
-change text to say just - support our current fundraisers, either by texting: (cut out rest); */
-
 body {
-/*  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-family: 'Anton', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -26,6 +20,7 @@ p.dark {
 
 p.small {
   font-size: 14px;
+  padding-top: 0.5em;
 }
 
 p.super-small {
@@ -98,7 +93,6 @@ h6.grey {
   color: #3f3f3f;
 }
 
-
 header {
   text-align: center;
   background: url(../img/Wall1Crop.jpg);
@@ -119,11 +113,6 @@ header img {
     padding-bottom: 100px;
   }
 }
-
-/*.team img {
-  padding-left: 15px;
-  padding-right: 15px;
-}*/
 
 img.transparent {
   background-color: white;
@@ -237,21 +226,6 @@ img.transparent {
   }
 }
 
-/*@media (min-width: 768px) and (max-width: 991px) {
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-  .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-  .navbar-header .collapse .navbar-toggle {
-    display: block !important;
-  }
-  .navbar-header {
-    float: none;
-  }
-}*/
-
 section {
   border-top: medium solid white;
 }
@@ -271,10 +245,18 @@ section {
 
 table {
   margin: auto;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 td.question {
   color: #24435F;
+/*  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;*/
+}
+
+th {
+  font-style: oblique;
 }
 
 td.source {
@@ -300,9 +282,6 @@ section.tri-column {
 }
 
 @media (max-width: 767px) {
-/*  section {
-    padding: 75px 0;
-  }*/
   section.first {
     padding-top: 75px;
   }
@@ -313,55 +292,6 @@ section.tri-column {
   margin-bottom: 1em;
 }
 
-.floating-label-form-group {
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
-}
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  z-index: 1;
-  position: relative;
-  padding-right: 0;
-  padding-left: 0;
-  border: none;
-  border-radius: 0;
-  font-size: 1.5em;
-  background: none;
-  box-shadow: none !important;
-  resize: none;
-}
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
-}
-.floating-label-form-group:not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #eeeeee;
-}
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-.floating-label-form-group-with-focus label {
-  color: #18BC9C;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
-}
 footer {
   color: white;
   padding-top: 30px;
@@ -371,17 +301,7 @@ footer {
 footer h3 {
   margin-bottom: 30px;
 }
-/*footer .footer-above {*/
-  
- /* padding-bottom: 30px;*/
-/*}*/
-/*footer .footer-col {
-  margin-bottom: 0px;
-}*/
-/*footer .footer-below {
-  padding: 25px 0;
-  background-color: #4a4a4a;
-}*/
+
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -400,8 +320,8 @@ footer h3 {
 }
 .btn-primary {
   color: white;
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #24435F;
+  border-color: #24435F;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -410,8 +330,8 @@ footer h3 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #1a242f;
-  border-color: #161f29;
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -433,11 +353,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #24435F;
+  border-color: #24435F;
 }
 .btn-primary .badge {
-  color: #2C3E50;
+  color: #24435F;
   background-color: white;
 }
 .btn-success {
@@ -452,7 +372,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #128f76;
+  background-color: #18BC9C;
   border-color: #11866f;
 }
 .btn-success:active,
@@ -565,12 +485,7 @@ fieldset[disabled] .btn-success.active {
   #team1, #team2, #team3 {
     text-align: center;
   }
-/*  #matt {
-    display: none;
-  }
-  #matt-small {
-    display: block;
-  }*/
+
   #sponsors img {
     padding: 1em 1em;
   }
@@ -579,10 +494,7 @@ fieldset[disabled] .btn-success.active {
     padding-right: 2em;
     padding-bottom: 0.5em;
   }
-  /*.team img {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  }*/
+
   .tri-column img {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -602,9 +514,6 @@ fieldset[disabled] .btn-success.active {
   #team3 {
     text-align: left;
   }
-/*  #matt-small {
-    display: none;
-  }*/
 }
 
 @media (max-width: 480px) {
