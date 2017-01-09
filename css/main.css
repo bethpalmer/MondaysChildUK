@@ -114,10 +114,6 @@ header img {
   }
 }
 
-img.transparent {
-  background-color: white;
-}
-
 #about {
   background: url(../img/NoHopeReflect.jpg);
    -webkit-background-size: cover;
