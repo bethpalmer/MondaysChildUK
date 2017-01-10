@@ -39,6 +39,12 @@ css
 
 @media (max-width: 991px) {
   .modal-dialog {
+  width: 50%;
+  }
+}
+
+@media (max-width: 767) {
+  .modal-dialog {
   width: 60%;
   }
 }
