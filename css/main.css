@@ -222,6 +222,10 @@ header img {
   }
 }
 
+#bootstrap-overrides .navbar-header {
+  padding-top: 1em;
+}
+
 section {
   border-top: medium solid white;
 }
