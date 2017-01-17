@@ -165,3 +165,8 @@
   };
 
 })(jQuery);
+
+if($(window).width() > 480) {
+  $("body").imageBox({ objClicked: "#gallery .img" });
+  $("body").imageBox({ objClicked: "#galleryFr .imgFr" });
+  };

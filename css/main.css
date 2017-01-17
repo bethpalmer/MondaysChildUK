@@ -116,6 +116,7 @@ header img {
 
 #about {
   background: url(../img/NoHopeReflect.jpg);
+  min-height: 700px;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -471,6 +472,7 @@ fieldset[disabled] .btn-success.active {
 @media (max-width: 991px) {
   #about {
     background: url(../img/wall.jpg);
+    min-height: 200px;
   }
   #fundraising {
      background: url(../img/wall.jpg);
