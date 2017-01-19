@@ -252,6 +252,18 @@ table {
   font-family: 'Open Sans', sans-serif;
 }
 
+table.fundraising {
+  width: 90%;
+}
+
+td.em {
+  font-style: font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  font-size: 1.75em;
+  color: #3f3f3f;
+  letter-spacing: -2px;
+}
+
 td.question {
   color: #24435F;
 /*  font-size: 14px;
@@ -493,7 +505,7 @@ fieldset[disabled] .btn-success.active {
   .body-text {
     padding-left: 2em;
     padding-right: 2em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
   }
 
   .tri-column img {
