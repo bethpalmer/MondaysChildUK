@@ -125,7 +125,7 @@ header img {
    background-height: auto;
 }
 
-#testimonials {
+.reflect-right {
    background: url(../img/wallReflect.jpg);
     -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -143,6 +143,10 @@ header img {
    background-size: cover;
    background-width: 100%;
    background-height: auto;
+}
+
+img.patron {
+  max-width: 250px;
 }
 
 .navbar-custom {
@@ -466,10 +470,10 @@ fieldset[disabled] .btn-success.active {
   height: auto;  
 }
 
-#matt img {
+/*#matt img {
   max-width: 300px;
   height: auto;
-}
+}*/
 
 @media (min-width: 992px) {
   #sponsors img {
