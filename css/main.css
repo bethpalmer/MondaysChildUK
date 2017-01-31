@@ -50,7 +50,7 @@ h6 {
 
 h1 {
   font-size: 3em;
-  color: #3f3f3f;
+/*  color: #3f3f3f;*/
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 
@@ -70,7 +70,7 @@ h4 {
   text-transform: none;
 }
 
-h4.grey {
+.grey {
   color: #3f3f3f;
 }
 
@@ -89,14 +89,21 @@ h6 {
   text-align: center;
 }
 
-h6.grey {
+/*h6.grey {
   color: #3f3f3f;
-}
+}*/
+
+/*.row {
+  margin-left: -20px;
+  margin-right: -20px;
+}*/
 
 header {
   text-align: center;
-  background: url(../img/Wall1Crop.jpg);
+  background: url(../img/WallCrop.jpg);
+  background-attachment: fixed;
   color: white;
+  min-height: 100vh;
 }
 header .container {
   padding-top: 100px;
@@ -123,9 +130,14 @@ header img {
    background-size: cover;
    background-width: 100%;
    background-height: auto;
+   height: 100vh;
 }
+/*
+#about > h1 {
+   color: #3f3f3f;
+}*/
 
-.reflect-right {
+/*.reflect-right {
    background: url(../img/wallReflect.jpg);
     -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -133,16 +145,77 @@ header img {
    background-size: cover;
    background-width: 100%;
    background-height: auto;
-}
+}*/
 
-#get-involved {
-   background: url(../img//wallReflectOnLeft.jpg);
+/*#get-involved {
+   background: url(../img//wallCrop.jpg);
+   background-attachment: fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    background-width: 100%;
    background-height: auto;
+}*/
+
+/*#testimonials {
+
+}*/
+
+#team,
+#testimonials,
+#get-involved,
+#sponsors {
+  min-height: 100vh;
+  background: url(../img//wallCrop.jpg);
+  background-attachment: fixed;
+/*  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+/*#testimonials-text {
+  background:  rgba(63,63,63, .8);
+  height: auto;
+}
+
+#get-involved {
+  background: rgba(63,63,63, .8);
+  height: auto;
+}
+*/
+
+.sponsors {
+  background: rgba(63,63,63, .8);
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.team {
+  background: rgba(63,63,63, .8);
+  height: auto;
+}
+
+.team1,
+.team2,
+.team3 {
+  background: rgba(63,63,63, .8);
+  height: 250px;
+}
+
+@media (max-width: 991px) {
+  .team1,
+  .team2,
+  .team3 {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team1,
+  .team2,
+  .team3 {
+    height: 180px;
+  }
 }
 
 img.patron {
@@ -233,9 +306,9 @@ img.patron {
   padding-top: 1em;
 }
 
-section {
-  border-top: medium solid white;
-}
+/*section {
+  border-top: medium solid #3f3f3f;
+}*/
 
 .body-text {
   padding-left: 70px;
@@ -460,14 +533,34 @@ fieldset[disabled] .btn-success.active {
   height: auto;
 }
 
-.imgFr {
+/*.imgFr {
   width: 100%;
   height: auto;
-}
+}*/
 
 #sponsors img {
   width: 100%;
   height: auto;  
+}
+
+.gallery {
+  position: relative;
+}
+
+/*.relative {
+  position: relative;
+}*/
+
+/*.align-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 34%;
+}*/
+
+button.photos {
+  width: 100%;
+  margin-top: 5px;
+  background: white;
 }
 
 /*#matt img {
@@ -499,7 +592,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 @media (max-width: 767px) {
-  #team1, #team2, #team3 {
+  .team1, .team2, .team3 {
     text-align: center;
   }
 
@@ -522,13 +615,13 @@ fieldset[disabled] .btn-success.active {
 }
 
 @media (min-width: 768px) {
-  #team1 {
+  .team1 {
     text-align: right;
   }
-  #team2 {
+  .team2 {
     text-align: center;
     }
-  #team3 {
+  .team3 {
     text-align: left;
   }
 }
