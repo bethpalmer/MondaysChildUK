@@ -74,6 +74,10 @@ h4 {
   color: #3f3f3f;
 }
 
+.white {
+  color: white;
+}
+
 h5 {
   font-size: 1.25em;
   text-transform: none;
@@ -94,8 +98,8 @@ h6 {
 }*/
 
 /*.row {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -60px;
+  margin-right: -60px;
 }*/
 
 header {
@@ -122,13 +126,13 @@ header img {
 }
 
 #about {
-  background: url(../img/NoHopeReflect.jpg);
+  background: url(../img/NoHopeReflect1.jpg);
   min-height: 700px;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   background-width: 100%;
+   background-width: 90%;
    background-height: auto;
    height: 100vh;
 }
@@ -162,6 +166,7 @@ header img {
 
 }*/
 
+#main,
 #team,
 #testimonials,
 #get-involved,
@@ -187,18 +192,25 @@ header img {
 .sponsors {
   background: rgba(63,63,63, .8);
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
+.get-involved,
+.testimonials,
 .team {
   background: rgba(63,63,63, .8);
   height: auto;
 }
 
+ /*{
+  background: rgba(63,63,63, .8);
+  height: auto;
+}*/
+
 .team1,
 .team2,
 .team3 {
-  background: rgba(63,63,63, .8);
+/*  background: rgba(63,63,63, .8);*/
   height: 250px;
 }
 
@@ -218,8 +230,8 @@ header img {
   }
 }
 
-img.patron {
-  max-width: 250px;
+.become {
+  padding-bottom: 20px;
 }
 
 .navbar-custom {
@@ -311,9 +323,9 @@ img.patron {
 }*/
 
 .body-text {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -370,7 +382,7 @@ td.source {
 section.tri-column {
   background: url(../img/wall.jpg);
   color: white;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 @media (max-width: 767px) {
@@ -533,14 +545,60 @@ fieldset[disabled] .btn-success.active {
   height: auto;
 }
 
+.inline {
+  display: inline-block;
+  margin: 1em;
+}
+
 /*.imgFr {
   width: 100%;
   height: auto;
 }*/
 
-#sponsors img {
+/*#sponsors img {
   width: 100%;
   height: auto;  
+}*/
+
+/*.sponsor-img img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}*/
+
+/*figure {
+  display: table;
+}
+
+figure figcaption {
+  display: table-cell;
+  vertical-align: middle;
+  width: 40%;
+}
+
+figure img {
+  display: table-cell;
+  width: 60%;
+}*/
+
+figure {
+  display: inline-block;
+  margin: 0;
+}
+
+figure img {
+  
+  padding: 0;
+  
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+img.patron {
+  max-height: 240px;
+  margin: 0;
 }
 
 .gallery {
@@ -569,10 +627,9 @@ button.photos {
 }*/
 
 @media (min-width: 992px) {
-  #sponsors img {
+ /* #sponsors img {
   width: 80%;
-  margin: 2em 2em;
-  }
+  }*/
   #no-hope {
     display: none;
   }
@@ -606,8 +663,8 @@ button.photos {
   }
 
   .tri-column img {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+ /* margin-top: 0.5em;
+  margin-bottom: 0.5em;*/
   }
   section.tri-column {
     padding: 1px 0px;
@@ -627,10 +684,10 @@ button.photos {
 }
 
 @media (max-width: 480px) {
-  #matt {
+/*  #matt {
     display: block;
   }
   #matt-text {
     display: block;
-  }
+  }*/
 }
