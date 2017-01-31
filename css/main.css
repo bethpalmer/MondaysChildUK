@@ -134,7 +134,7 @@ header img {
    background-size: cover;
    background-width: 90%;
    background-height: auto;
-   height: 100vh;
+  /* height: 100vh;*/
 }
 /*
 #about > h1 {
@@ -171,7 +171,7 @@ header img {
 #testimonials,
 #get-involved,
 #sponsors {
-  min-height: 100vh;
+ /* min-height: 100vh;*/
   background: url(../img//wallCrop.jpg);
   background-attachment: fixed;
 /*  background-repeat: no-repeat;
@@ -188,6 +188,10 @@ header img {
   height: auto;
 }
 */
+
+#testimonials {
+  padding-bottom: 20px;
+}
 
 .sponsors {
   background: rgba(63,63,63, .8);
@@ -597,7 +601,7 @@ figure figcaption {
 }
 
 img.patron {
-  max-height: 240px;
+  max-height: 200px;
   margin: 0;
 }
 
