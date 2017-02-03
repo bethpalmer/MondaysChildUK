@@ -170,9 +170,10 @@ header img {
 #team,
 #testimonials,
 #get-involved,
-#sponsors {
+#sponsors,
+#no-hope {
  /* min-height: 100vh;*/
-  background: url(../img//wallCrop.jpg);
+  background: url(../img/WallCrop.jpg);
   background-attachment: fixed;
 /*  background-repeat: no-repeat;
   background-size: cover;*/
@@ -188,6 +189,10 @@ header img {
   height: auto;
 }
 */
+
+img.no-hope {
+  margin-bottom: 20px;
+}
 
 #testimonials {
   padding-bottom: 20px;
@@ -372,6 +377,21 @@ td.source {
   font-style: italic;
 }
 
+button.photos {
+  width: 100%;
+  margin-top: 5px;
+  border: solid 0.5px white;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+/*  background: white;*/
+}
+
+/*button.photos:visited {
+  box-shadow: 2px 2px 5px #789EAB;
+  border: solid 1px white;
+}*/
+
 #bootstrap-overrides .btn-style {
   background-color: #3f3f3f;
   box-shadow: 2px 2px 5px #789EAB;
@@ -397,7 +417,7 @@ section.tri-column {
 
 .tri-column img {
   margin-top: 2em;
-  margin-bottom: 1em;
+/*  margin-bottom: 1em;*/
 }
 
 footer {
@@ -551,7 +571,7 @@ fieldset[disabled] .btn-success.active {
 
 .inline {
   display: inline-block;
-  margin: 1em;
+  margin: 0 1em;
 }
 
 /*.imgFr {
@@ -619,12 +639,6 @@ img.patron {
   left: 34%;
 }*/
 
-button.photos {
-  width: 100%;
-  margin-top: 5px;
-  background: white;
-}
-
 /*#matt img {
   max-width: 300px;
   height: auto;
@@ -641,8 +655,11 @@ button.photos {
 
 @media (max-width: 991px) {
   #about {
-    background: url(../img/wall.jpg);
-    min-height: 200px;
+    background: rgba(63,63,63, .8);
+    height: auto;
+  }
+  h1.about {
+    color: white;
   }
   #fundraising {
      background: url(../img/wall.jpg);
@@ -673,6 +690,16 @@ button.photos {
   section.tri-column {
     padding: 1px 0px;
   }
+
+  .no-show {
+    display: none;
+  }
+
+  .img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -685,6 +712,9 @@ button.photos {
   .team3 {
     text-align: left;
   }
+/*  .hide {
+    display: initial;
+  }*/
 }
 
 @media (max-width: 480px) {
