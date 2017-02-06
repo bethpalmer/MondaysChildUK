@@ -54,12 +54,6 @@ var openPhotoSwipe1 = function() {
             alt: 'Thank you letter following drama course'
         },
         {
-            src: 'img/courses/models.jpg',
-            w: 500,
-            h: 500,
-            alt: 'Collection of craft models made at a workshop'
-        },
-        {
             src: 'img/galleryCourses/drama-group.jpg',
             w: 320,
             h: 240,
@@ -69,7 +63,7 @@ var openPhotoSwipe1 = function() {
             src: 'img/galleryCourses/drama-pair.jpg',
             w: 500,
             h: 500,
-            alt: 'Mid-practice picture'
+            alt: 'Mid-rehersal picture'
         },
         {
             src: 'img/galleryCourses/drama-show.jpg',

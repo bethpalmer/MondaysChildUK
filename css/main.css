@@ -1,4 +1,3 @@
-!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -192,23 +191,78 @@ header img {
 
 img.no-hope {
   margin-bottom: 20px;
+  border: solid 0.5em white;
+}
+
+img.no-hope.small {
+  display: none;
+}
+
+@media screen and (min-width: 801px) {
+  .sponsors {
+    background: rgba(63,63,63, .8);
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .get-involved,
+  .testimonials,
+  .team {
+    background: rgba(63,63,63, .8);
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  img.no-hope {
+    border: none;
+  }
+  #no-hope {
+    background: white;
+    padding-top: 20px;
+  }
+  img.logo {
+    max-width: 80%;
+  }
+  div.tag {
+    margin: 10%;
+  }
+  .sponsors {
+    background: none;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .get-involved,
+  .testimonials,
+  .team {
+    background: none;
+    height: auto;
+  }
+   #about {
+    background: none;
+    height: auto;
+  }
+}
+
+img.team-img {
+  max-width: 45%;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 500px) {
+  img.no-hope.big {
+    display: none;
+  }
+  img.no-hope.small {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 #testimonials {
   padding-bottom: 20px;
-}
-
-.sponsors {
-  background: rgba(63,63,63, .8);
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.get-involved,
-.testimonials,
-.team {
-  background: rgba(63,63,63, .8);
-  height: auto;
 }
 
  /*{
@@ -331,6 +385,11 @@ img.no-hope {
   border-top: medium solid #3f3f3f;
 }*/
 
+#bootstrap-overrides .no-padding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .body-text {
   padding-left: 20px;
   padding-right: 20px;
@@ -413,11 +472,6 @@ section.tri-column {
   section.first {
     padding-top: 75px;
   }
-}
-
-.tri-column img {
-  margin-top: 2em;
-/*  margin-bottom: 1em;*/
 }
 
 footer {
@@ -653,11 +707,14 @@ img.patron {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px and min-width: 801px) {
   #about {
     background: rgba(63,63,63, .8);
     height: auto;
   }
+}
+
+@media (max-width: 991px) {
   h1.about {
     color: white;
   }
@@ -678,8 +735,8 @@ img.patron {
     padding: 1em 1em;
   }
   .body-text {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-bottom: 1em;
   }
 
