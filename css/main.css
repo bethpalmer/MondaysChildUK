@@ -1,4 +1,3 @@
-!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -153,6 +152,10 @@ header img {
   margin-bottom: 20px;
 }
 
+.spons-img {
+  margin-bottom: 20px;
+}
+
 /*#sponsors {
   padding-bottom: 20px;
 }*/
@@ -173,13 +176,22 @@ button.photos {
 
 button.photos-sm {
   width: 90%;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   margin-left: 5%;
   border: solid 0.5px white;
   border-radius: 5px;
   color: white;
   height: 35px;
+}
+
+div.single-pic > img.picAlt {
+  width: 95%;
+}
+
+.exception {
+  margin-right: 20px;
+  margin-left: 5px;
 }
 
 .navbar-custom {
@@ -576,6 +588,10 @@ img.team-img {
   div.sm-sc-btn {
     display: block;
   }
+  h1.ass {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -597,6 +613,15 @@ img.team-img {
   img.no-show-max600 {
     display: none;
   }
+  h3 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 2.3em;
+  }
 }
 
 
@@ -606,12 +631,13 @@ img.team-img {
   }
   img.no-hope.small {
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 96%;
   }
 
   div.single-pic {
     display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: medium solid white;
   }
 
   .pic {
