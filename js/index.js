@@ -115,36 +115,36 @@ var openPhotoSwipe2 = function() {
 
     // build items array
     var fundraisingPics = [
-        {
-            src: 'img/fundraising/group-arc.jpg',
-            w: 500,
-            h: 500,
-            alt: 'Arch to Arch Challenge group photo'
-        },
-        {
-            src: 'img/fundraising/arch-bike.jpg',
-            w: 500,
-            h: 500,
-            alt: 'Arch to Arch Challenge arrival photo'
-        },
-        {
-            src: 'img/fundraising/chicken-run.jpg',
-            w: 500,
-            h: 500,
-            alt: 'Chicken run fundraiser'
-        },
-        {
-            src: 'img/fundraising/mountain-view.jpg',
-            w: 500,
-            h: 500,
-            alt: '3 Peaks Challenge mountain view'
-        },
-        {
-            src: 'img/fundraising/group-mountain.jpg',
-            w: 500,
-            h: 500,
-            alt: '3 Peaks Challenge group shot'
-        },
+        // {
+        //     src: 'img/fundraising/group-arc.jpg',
+        //     w: 500,
+        //     h: 500,
+        //     alt: 'Arch to Arch Challenge group photo'
+        // },
+        // {
+        //     src: 'img/fundraising/arch-bike.jpg',
+        //     w: 500,
+        //     h: 500,
+        //     alt: 'Arch to Arch Challenge arrival photo'
+        // },
+        // {
+        //     src: 'img/fundraising/chicken-run.jpg',
+        //     w: 500,
+        //     h: 500,
+        //     alt: 'Chicken run fundraiser'
+        // },
+        // {
+        //     src: 'img/fundraising/mountain-view.jpg',
+        //     w: 500,
+        //     h: 500,
+        //     alt: '3 Peaks Challenge mountain view'
+        // },
+        // {
+        //     src: 'img/fundraising/group-mountain.jpg',
+        //     w: 500,
+        //     h: 500,
+        //     alt: '3 Peaks Challenge group shot'
+        // },
         {
             src: 'img/galleryFundraising/arch-start.jpg',
             w: 500,
@@ -250,5 +250,8 @@ var openPhotoSwipe2 = function() {
 // openPhotoSwipe();
 
 document.getElementById('btn1').onclick = openPhotoSwipe1;
+document.getElementById('btn3').onclick = openPhotoSwipe1;
+
 document.getElementById('btn2').onclick = openPhotoSwipe2;
+document.getElementById('btn4').onclick = openPhotoSwipe2;
 

@@ -1,3 +1,4 @@
+!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -49,7 +50,7 @@ h6 {
 
 h1 {
   font-size: 3em;
-/*  color: #3f3f3f;*/
+  color: #3f3f3f;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 
@@ -69,13 +70,9 @@ h4 {
   text-transform: none;
 }
 
-.grey {
+/*h4.grey {
   color: #3f3f3f;
-}
-
-.white {
-  color: white;
-}
+}*/
 
 h5 {
   font-size: 1.25em;
@@ -92,21 +89,18 @@ h6 {
   text-align: center;
 }
 
-/*h6.grey {
+.grey {
   color: #3f3f3f;
-}*/
+}
 
-/*.row {
-  margin-left: -60px;
-  margin-right: -60px;
-}*/
+.white {
+  color: white;
+}
 
 header {
   text-align: center;
-  background: url(../img/WallCrop.jpg);
-  background-attachment: fixed;
+  background: url(../img/Wall1Crop.jpg);
   color: white;
-  min-height: 100vh;
 }
 header .container {
   padding-top: 100px;
@@ -125,176 +119,67 @@ header img {
 }
 
 #about {
-  background: url(../img/NoHopeReflect1.jpg);
+  background: url(../img/NoHopeReflect.jpg);
   min-height: 700px;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   background-width: 90%;
+   background-width: 100%;
    background-height: auto;
-  /* height: 100vh;*/
 }
-/*
-#about > h1 {
-   color: #3f3f3f;
-}*/
 
-/*.reflect-right {
-   background: url(../img/wallReflect.jpg);
+.reflect-right {
+   background: url(../img/wallReflect-new4.jpg);
     -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    background-width: 100%;
    background-height: auto;
-}*/
+}
 
-/*#get-involved {
-   background: url(../img//wallCrop.jpg);
-   background-attachment: fixed;
+#get-involved {
+   background: url(../img/wallReflect-new4.jpg);
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    background-width: 100%;
    background-height: auto;
-}*/
-
-/*#testimonials {
-
-}*/
-
-#main,
-#team,
-#testimonials,
-#get-involved,
-#sponsors,
-#no-hope {
- /* min-height: 100vh;*/
-  background: url(../img/WallCrop.jpg);
-  background-attachment: fixed;
-/*  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 
-/*#testimonials-text {
-  background:  rgba(63,63,63, .8);
-  height: auto;
-}
-
-#get-involved {
-  background: rgba(63,63,63, .8);
-  height: auto;
-}
-*/
-
-img.no-hope {
+.sponsors {
   margin-bottom: 20px;
-  border: solid 0.5em white;
 }
 
-img.no-hope.small {
-  display: none;
-}
-
-@media screen and (min-width: 801px) {
-  .sponsors {
-    background: rgba(63,63,63, .8);
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .get-involved,
-  .testimonials,
-  .team {
-    background: rgba(63,63,63, .8);
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  img.no-hope {
-    border: none;
-  }
-  #no-hope {
-    background: white;
-    padding-top: 20px;
-  }
-  img.logo {
-    max-width: 80%;
-  }
-  div.tag {
-    margin: 10%;
-  }
-  .sponsors {
-    background: none;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .get-involved,
-  .testimonials,
-  .team {
-    background: none;
-    height: auto;
-  }
-   #about {
-    background: none;
-    height: auto;
-  }
-}
-
-img.team-img {
-  max-width: 45%;
-  display: inline-block;
-  margin-left: 0.5em;
-}
-
-@media screen and (max-width: 500px) {
-  img.no-hope.big {
-    display: none;
-  }
-  img.no-hope.small {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-#testimonials {
+/*#sponsors {
   padding-bottom: 20px;
-}
-
- /*{
-  background: rgba(63,63,63, .8);
-  height: auto;
 }*/
 
-.team1,
-.team2,
-.team3 {
-/*  background: rgba(63,63,63, .8);*/
-  height: 250px;
+img.patron {
+  max-width: 250px;
 }
 
-@media (max-width: 991px) {
-  .team1,
-  .team2,
-  .team3 {
-    height: 300px;
-  }
+button.photos {
+  width: 100%;
+  margin-top: 5px;
+  border: solid 0.5px white;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+/*  background: white;*/
 }
 
-@media (max-width: 767px) {
-  .team1,
-  .team2,
-  .team3 {
-    height: 180px;
-  }
-}
-
-.become {
-  padding-bottom: 20px;
+button.photos-sm {
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  border: solid 0.5px white;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
 }
 
 .navbar-custom {
@@ -381,19 +266,14 @@ img.team-img {
   padding-top: 1em;
 }
 
-/*section {
-  border-top: medium solid #3f3f3f;
-}*/
-
-#bootstrap-overrides .no-padding {
-  padding-right: 0px;
-  padding-left: 0px;
+section {
+  border-top: medium solid white;
 }
 
 .body-text {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 50px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -436,21 +316,6 @@ td.source {
   font-style: italic;
 }
 
-button.photos {
-  width: 100%;
-  margin-top: 5px;
-  border: solid 0.5px white;
-  border-radius: 5px;
-  color: white;
-  height: 35px;
-/*  background: white;*/
-}
-
-/*button.photos:visited {
-  box-shadow: 2px 2px 5px #789EAB;
-  border: solid 1px white;
-}*/
-
 #bootstrap-overrides .btn-style {
   background-color: #3f3f3f;
   box-shadow: 2px 2px 5px #789EAB;
@@ -465,13 +330,18 @@ button.photos {
 section.tri-column {
   background: url(../img/wall.jpg);
   color: white;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 @media (max-width: 767px) {
   section.first {
     padding-top: 75px;
   }
+}
+
+.tri-column img {
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 footer {
@@ -618,105 +488,45 @@ fieldset[disabled] .btn-success.active {
   outline: none;
 }
 
-.img {
+.pic {
   width: 100%;
   height: auto;
 }
 
-.inline {
-  display: inline-block;
-  margin: 0 1em;
-}
-
-/*.imgFr {
+.picAlt {
   width: 100%;
   height: auto;
-}*/
+}
 
-/*#sponsors img {
+#sponsors img {
   width: 100%;
   height: auto;  
-}*/
-
-/*.sponsor-img img {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}*/
-
-/*figure {
-  display: table;
 }
 
-figure figcaption {
-  display: table-cell;
-  vertical-align: middle;
-  width: 40%;
+img.no-hope.small {
+  display: none;
 }
 
-figure img {
-  display: table-cell;
-  width: 60%;
-}*/
+div.single-pic {
+  display: none;
+}
 
-figure {
+img.team-img {
+  max-width: 45%;
   display: inline-block;
-  margin: 0;
+  margin-left: 0.5em;
 }
-
-figure img {
-  
-  padding: 0;
-  
-}
-
-figure figcaption {
-  text-align: center;
-}
-
-img.patron {
-  max-height: 200px;
-  margin: 0;
-}
-
-.gallery {
-  position: relative;
-}
-
-/*.relative {
-  position: relative;
-}*/
-
-/*.align-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 34%;
-}*/
-
-/*#matt img {
-  max-width: 300px;
-  height: auto;
-}*/
 
 @media (min-width: 992px) {
- /* #sponsors img {
-  width: 80%;
-  }*/
   #no-hope {
     display: none;
   }
 }
 
-@media screen and (max-width: 991px and min-width: 801px) {
-  #about {
-    background: rgba(63,63,63, .8);
-    height: auto;
-  }
-}
-
 @media (max-width: 991px) {
-  h1.about {
-    color: white;
+  #about {
+    background: url(../img/wall.jpg);
+    min-height: 200px;
   }
   #fundraising {
      background: url(../img/wall.jpg);
@@ -726,36 +536,45 @@ img.patron {
   }
 }
 
+@media screen and (max-width: 800px) {
+  img.logo {
+    max-width: 80%;
+  }
+  div.tag {
+    margin: 10%;
+  }
+}
+
+
 @media (max-width: 767px) {
   .team1, .team2, .team3 {
     text-align: center;
   }
 
-  #sponsors img {
+  /*#sponsors img {
     padding: 1em 1em;
-  }
+  }*/
   .body-text {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 1em;
   }
 
   .tri-column img {
- /* margin-top: 0.5em;
-  margin-bottom: 0.5em;*/
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   }
   section.tri-column {
     padding: 1px 0px;
   }
-
-  .no-show {
+  .no-show-max767 {
     display: none;
   }
-
-  .img {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  button.photos {
+    display: none;
+  }
+  div.sm-sc-btn {
+    display: block;
   }
 }
 
@@ -769,16 +588,37 @@ img.patron {
   .team3 {
     text-align: left;
   }
-/*  .hide {
-    display: initial;
-  }*/
+  div.sm-sc-btn {
+    display: none;
+  }
 }
 
-@media (max-width: 480px) {
-/*  #matt {
-    display: block;
+@media screen and (max-width: 600px) {
+  img.no-show-max600 {
+    display: none;
   }
-  #matt-text {
+}
+
+
+@media screen and (max-width: 500px) {
+  img.no-hope.big {
+    display: none;
+  }
+  img.no-hope.small {
     display: block;
-  }*/
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  div.single-pic {
+    display: inline-block;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  button.photos {
+    display: none;
+  }
 }
