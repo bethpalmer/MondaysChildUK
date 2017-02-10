@@ -8,9 +8,9 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-p.dark {
+/*p.dark {
   color: #3f3f3f;
-}
+}*/
 
 p.small {
   font-size: 14px;
@@ -20,6 +20,10 @@ p.small {
 p.super-small {
   font-size: 12px;
   color: #18BC9C;
+}
+
+.panel-body > p {
+  color: #3f3f3f;
 }
 
 a,
@@ -44,7 +48,6 @@ h6 {
 
 h1 {
   font-size: 3em;
-  color: #3f3f3f;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 
@@ -87,14 +90,15 @@ h6 {
   color: #3f3f3f;
 }
 
-.white {
+/*.white {
   color: white;
-}
+}*/
 
 header {
   text-align: center;
   background: url(../img/Wall1Crop.jpg);
   color: white;
+  border-bottom: medium solid white;
 }
 header .container {
   padding-top: 100px;
@@ -114,21 +118,29 @@ header img {
    background-size: cover;
 }
 
-.back-wall {
+#team {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+#no-hope {
+  border-bottom: medium solid white;
+}
+/*.back-wall {
    background: url(../img/wallBackg.jpg);
     -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-}
+}*/
 
-#testimonials {
+/*#testimonials {
   background: url(../img/wallBackg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 .sponsors,
 .spons-img {
@@ -137,6 +149,8 @@ header img {
 
 img.patron {
   max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button.photos {
@@ -168,7 +182,8 @@ button.photos-sm:hover {
 }
 
 div.single-pic > img.picAlt {
-  width: 95%;
+  width: 100%;
+  border: medium solid white;
 }
 
 .exception {
@@ -260,10 +275,7 @@ div.single-pic > img.picAlt {
   padding-top: 1em;
 }
 
-section {
-  border-top: medium solid white;
-}
-
+/************* Panels padding ******************/
 .body-text {
   padding-left: 70px;
   padding-right: 70px;
@@ -283,32 +295,34 @@ table {
   font-family: 'Open Sans', sans-serif;
 }
 
+/************* Fundraising text ****************/
 table.fundraising {
   width: 90%;
 }
 
 td.em {
   font-family: 'Anton', sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1.75em;
   color: #3f3f3f;
-  letter-spacing: -2px;
 }
 
+/************* Testimonials text *******************/
 td.question {
   color: #24435F;
-/*  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;*/
+
 }
 
 th {
   font-style: oblique;
+  color: #3f3f3f;
 }
 
 td.source {
   color: #789EAB;
   font-style: italic;
 }
+
 
 #bootstrap-overrides .btn-style {
   background-color: #3f3f3f;
@@ -321,10 +335,10 @@ td.source {
   background-color: #24435F;
 }
 
-section.tri-column {
-  background: url(../img/wall.jpg);
+section.brick {
+  background: url(../img/brick-wall.jpg);
   color: white;
-  padding: 50px 0;
+/*  padding: 50px 0;*/
 }
 
 @media (min-width: 768px) {
@@ -502,21 +516,26 @@ div.single-pic {
 }
 
 img.team-img {
-  max-width: 45%;
+/*  max-width: 45%;*/
   display: inline-block;
-  margin-left: 0.5em;
 }
 
 @media (min-width: 992px) {
   #no-hope {
     display: none;
   }
+  h1.about {
+    color: #3f3f3f;
+  }
 }
 
 @media (max-width: 991px) {
   #about {
-    background: url(../img/wall.jpg);
+    background: url(../img/brick-wall.jpg);
     min-height: 200px;
+  }
+  h1.about {
+    color: white;
   }
   #fundraising {
      background: url(../img/wall.jpg);
@@ -557,17 +576,16 @@ img.team-img {
   div.sm-sc-btn {
     display: none;
   }
-  h1.ass {
-    display: inline-block;
-    text-align: center;
+  .padding {
+    padding-bottom: 2em;
   }
-  #testimonials {
-    background: url(../img/wallBackg.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+/*  h1.pad-on-small {
+    padding-top: 20px;
+  }*/
+/*  #get-involved,
+  #testimonials-text {
+    padding-top: 20px;
+  }*/
 }
 
 @media (min-width: 768px) {
@@ -607,13 +625,13 @@ img.team-img {
   }
   img.no-hope.small {
     display: block;
-    width: 96%;
+    width: 100%;
+    border: medium solid white;
   }
 
   div.single-pic {
     display: inline-block;
     margin-bottom: 20px;
-    border-bottom: medium solid white;
   }
 
   .pic {

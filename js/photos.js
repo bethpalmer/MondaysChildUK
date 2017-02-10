@@ -6,49 +6,61 @@ var openPhotoSwipe1 = function() {
     // build items array
     var coursePics = [
         {
-            src: 'img/courses/painting.jpg',
+            src: 'img/galleryCourses/MCUKrocks.jpg',
             w: 500,
             h: 500,
-            alt: 'Children painting masks workshop'
+            alt: "Child's painted MCUK rocks poster"
         },
         {
-            src: 'img/courses/drama-hands.jpg',
+            src: 'img/galleryCourses/drama-hands.jpg',
             w: 500,
             h: 500,
             alt: "Children's collaborative drama display work with hand prints"
         },
         {
-            src: 'img/courses/certificates.jpg',
+            src: 'img/galleryCourses/certificates.jpg',
             w: 500,
             h: 500,
             alt: 'Drama group photo with certificates'
         },
         {
-            src: 'img/courses/acrostic.jpg',
+            src: 'img/galleryCourses/shakespear.jpg',
+            w: 500,
+            h: 500,
+            alt: 'Shakespear pair'
+        },
+        {
+            src: 'img/galleryCourses/acrostic.jpg',
             w: 500,
             h: 500,
             alt: 'DRAMA acrostic poem'
         },
         {
-            src: 'img/courses/mask.jpg',
+            src: 'img/galleryCourses/group-masks.jpg',
+            w: 500,
+            h: 500,
+            alt: 'Drama group in hand painted masks'
+        },
+        {
+            src: 'img/galleryCourses/mask.jpg',
             w: 500,
             h: 500,
             alt: 'Child in hand made mask'
         },
         {
-            src: 'img/courses/card.jpg',
+            src: 'img/galleryCourses/card.jpg',
             w: 500,
             h: 500,
             alt: 'Thank you card following drama course'
         },
         {
-            src: 'img/courses/masks.jpg',
+            src: 'img/galleryCourses/masks.jpg',
             w: 500,
             h: 500,
             alt: 'Drama group in hand made masks'
         },
         {
-            src: 'img/courses/thankyou.jpg',
+            src: 'img/galleryCourses/thankyou.jpg',
             w: 500,
             h: 500,
             alt: 'Thank you letter following drama course'
