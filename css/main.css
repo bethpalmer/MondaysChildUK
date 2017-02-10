@@ -163,22 +163,17 @@ button.photos {
 }
 
 button.photos-sm {
-  width: 90%;
-  margin-top: 10px;
+  width: 100%;
   margin-bottom: 10px;
-  margin-left: 5%;
   border: solid 0.5px white;
   border-radius: 5px;
   color: white;
   height: 35px;
-  background-color: #3f3f3f;
-  box-shadow: 2px 2px 5px #789EAB;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
 
 button.photos-sm:hover {
-  background-color: #24435F;
+  background-color: #18BC9C;
+  border: solid 1px #3f3f3f;
 }
 
 div.single-pic > img.picAlt {
@@ -325,6 +320,9 @@ td.source {
 
 
 #bootstrap-overrides .btn-style {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
   background-color: #3f3f3f;
   box-shadow: 2px 2px 5px #789EAB;
   -webkit-transition-duration: 0.3s;
@@ -332,7 +330,8 @@ td.source {
 }
 
 #bootstrap-overrides .btn-style:hover {
-  background-color: #24435F;
+  background-color: #18BC9C;
+  border: solid 1px #3f3f3f;
 }
 
 section.brick {
@@ -572,12 +571,16 @@ img.team-img {
     padding: 1px 0px;
   }
   .no-show-max767,
-  button.photos,
-  div.sm-sc-btn {
+  button.photos {
     display: none;
   }
   .padding {
     padding-bottom: 2em;
+  }
+
+  div.sm-sc-btn {
+    display: block;
+    background: url(../img/brick-wall.jpg);
   }
 /*  h1.pad-on-small {
     padding-top: 20px;
