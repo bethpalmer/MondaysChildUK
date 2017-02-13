@@ -36,6 +36,18 @@ var openPhotoSwipe1 = function() {
             alt: 'DRAMA acrostic poem'
         },
         {
+            src: 'img/galleryCourses/making-masks.jpg',
+            w: 500,
+            h: 375,
+            alt: 'Children making masks workshop'
+        },
+        {
+            src: 'img/galleryCourses/colourful-masks.jpg',
+            w: 500,
+            h: 375,
+            alt: "Colourful children's handmade masks"
+        },
+        {
             src: 'img/galleryCourses/group-masks.jpg',
             w: 500,
             h: 500,
@@ -128,31 +140,31 @@ var openPhotoSwipe2 = function() {
     // build items array
     var fundraisingPics = [
         {
-            src: 'img/fundraising/group-arc.jpg',
+            src: 'img/galleryFundraising/group-arc.jpg',
             w: 500,
             h: 500,
             alt: 'Arch to Arch Challenge group photo'
         },
         {
-            src: 'img/fundraising/arch-bike.jpg',
+            src: 'img/galleryFundraising/arch-bike.jpg',
             w: 500,
             h: 500,
             alt: 'Arch to Arch Challenge arrival photo'
         },
         {
-            src: 'img/fundraising/chicken-run.jpg',
+            src: 'img/galleryFundraising/chicken-run.jpg',
             w: 500,
             h: 500,
             alt: 'Chicken run fundraiser'
         },
         {
-            src: 'img/fundraising/mountain-view.jpg',
+            src: 'img/galleryFundraising/mountain-view.jpg',
             w: 500,
             h: 500,
             alt: '3 Peaks Challenge mountain view'
         },
         {
-            src: 'img/fundraising/group-mountain.jpg',
+            src: 'img/galleryFundraising/group-mountain.jpg',
             w: 500,
             h: 500,
             alt: '3 Peaks Challenge group shot'
