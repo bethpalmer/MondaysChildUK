@@ -98,8 +98,17 @@ header img {
   margin: 0 auto 20px;
 }
 
-#about {
+.about {
   background: url(../img/NoHopeReflect.jpg);
+  min-height: 700px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.no-hope-right {
+  background: url(../img/NoHopeReflectRight.jpg);
   min-height: 700px;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -152,7 +161,7 @@ button.photos-sm:hover {
 
 div.single-pic > img.picAlt {
   width: 100%;
-  border: medium solid white;
+ /* border: medium solid white;*/
 }
 
 .exception {
@@ -256,6 +265,11 @@ div.single-pic > img.picAlt {
   margin-right: 0;
   margin-left: 0;
 }
+
+/*.reposition {
+
+  padding-right: 0;
+}*/
 
 table {
   margin: auto;
@@ -501,7 +515,9 @@ img.team-img {
 }
 
 @media (max-width: 991px) {
-  #about {
+  #about,
+  #testimonials,
+  #get-involved {
     background: url(../img/brick-wall.jpg);
     min-height: 200px;
   }
